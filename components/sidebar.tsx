@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { ScrollArea } from "@radix-ui/react-scroll-area"
+import { ScrollArea } from "@/components/ui/scroll-area"
 import {
   BarChart3,
   Calendar,
@@ -25,7 +25,9 @@ export function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false)
 
   return (
-    <div className={`relative border-r bg-zinc-100/40 ${isCollapsed ? "w-16" : "w-64"} transition-all duration-300`}>
+    <div
+      className={`relative border-r bg-zinc-100/40 dark:bg-zinc-800/40 ${isCollapsed ? "w-16" : "w-64"} transition-all duration-300`}
+    >
       <div className="flex h-16 items-center justify-between px-4 border-b">
         <Link href="/" className={`flex items-center ${isCollapsed ? "justify-center" : ""}`}>
           <Wrench className="h-6 w-6 text-red-600" />
