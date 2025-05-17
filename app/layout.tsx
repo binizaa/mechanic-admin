@@ -2,7 +2,6 @@ import type React from "react";
 import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Sidebar } from "@/components/sidebar";
-import { Header } from "@/components/header";
 import DeployButton from "@/components/deploy-button";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";

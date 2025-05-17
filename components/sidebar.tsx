@@ -99,7 +99,7 @@ const navItems = [
   },
   {
     name: "Vehicles",
-    href: "/vehicles",
+    href: "/protected/pages/vehicles",
     icon: Car,
   },
   {
